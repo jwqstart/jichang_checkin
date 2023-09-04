@@ -35,9 +35,9 @@ jobs:
           pip install -r requirements.txt
       - name: Run sign
         env:
-          URL: ${{https://v2free.net}}
+          URL: ${{ secrets.URL }}
           SCKEY: ${{ secrets.SCKEY }}
-          EMAIL: ${{ 1923462630@qq.com }}
-          PASSWD: ${{ 12qwaszx..+ }}
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWD: ${{ secrets.PASSWD }}
         run: |
           python3 ./main.py
