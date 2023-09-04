@@ -35,7 +35,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run sign
         env:
-          URL: ${{ https://tly38.com/modules/ }}
+          URL: ${{ https://tly38.com/modules }}
           SCKEY: ${{ secrets.SCKEY }}
           EMAIL: ${{ 1923462630@qq.com }}
           PASSWD: ${{ 12qwaszx..+ }}
